@@ -1,13 +1,13 @@
 /*
  * GraficacionApp.java
  */
-
 package graficacion;
 
 /**
  * The main class of the application.
  */
-public class GraficacionApp  {
+public class GraficacionApp {
+
     /**
      * Main method launching the application.
      */

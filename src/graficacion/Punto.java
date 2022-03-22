@@ -2,7 +2,6 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package graficacion;
 
 /**
@@ -10,19 +9,20 @@ package graficacion;
  * @author GenaroML
  */
 public class Punto {
+
     double x;
     double y;
 
-    public void setLocation(double x, double y){
+    public void setLocation(double x, double y) {
         this.x = x;
         this.y = y;
     }
 
-    public double getX(){
+    public double getX() {
         return x;
     }
 
-    public double getY(){
+    public double getY() {
         return y;
     }
 

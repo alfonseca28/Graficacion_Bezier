@@ -4,7 +4,6 @@
  */
 package graficacion;
 
-
 import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
@@ -17,22 +16,21 @@ import javax.swing.JPanel;
 public class JPanelDibujo extends JPanel implements MouseMotionListener {
 
     double[] Px, Py;
-    int n=4, n1, w, h, h1, w2;
+    int n = 4, n1, w, h, h1, w2;
     boolean initiated = false;
 
     public JPanelDibujo() {
-        super();        
+        super();
     }
-  
 
-    public void init(){
+    public void init() {
         n = 4;
         n1 = n + 1;
         h = this.getHeight();
         w = this.getWidth();
 
         h1 = h - 1;
-        w2 = w ;
+        w2 = w;
 
         Px = new double[n];
         Py = new double[n];
@@ -49,6 +47,7 @@ public class JPanelDibujo extends JPanel implements MouseMotionListener {
         initiated = true;
 
     }
+
     public void drawFun(Graphics2D g2d) {
         double step = 1. / w2, t = step;
         double[] B = new double[n1], Bo = new double[n1], Bold = new double[n1];
@@ -124,13 +123,13 @@ public class JPanelDibujo extends JPanel implements MouseMotionListener {
     @Override
     public void paintComponent(Graphics g) {
 
-        if (initiated){
-        clear(g);
-        Graphics2D g2d = (Graphics2D) g;
+        if (initiated) {
+            clear(g);
+            Graphics2D g2d = (Graphics2D) g;
 
-        g2d.setColor(Color.blue);
+            g2d.setColor(Color.blue);
 
-        drawSpline(g2d);
+            drawSpline(g2d);
         }
 
     }
@@ -175,15 +174,14 @@ public class JPanelDibujo extends JPanel implements MouseMotionListener {
         repaint();
     }
 
-
     @Override
-    public void repaint(){
+    public void repaint() {
         super.repaint();
 
         h = this.getHeight();
         w = this.getWidth();
 
         h1 = h - 1;
-        w2 = w ;
+        w2 = w;
     }
 }
