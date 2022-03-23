@@ -34,12 +34,14 @@ public class JPanelDibujo extends JPanel implements MouseMotionListener {
 
         Px = new double[n];
         Py = new double[n];
+        //Puntos de en el eje x
         Px[0] = .1 * w2;
         Px[1] = .1 * w2;
         Px[2] = .9 * w2;
         Px[3] = .9 * w2;
         Px[4] = .3 * w2;
         Px[5] = .6 * w2;
+        //Puntos de en el eje x
         Py[0] = .1 * h1;
         Py[1] = .9 * h1;
         Py[2] = .9 * h1;
