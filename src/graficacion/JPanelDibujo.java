@@ -24,7 +24,7 @@ public class JPanelDibujo extends JPanel implements MouseMotionListener {
     }
 
     public void init() {
-        n = 4;
+        n = 6;
         n1 = n + 1;
         h = this.getHeight();
         w = this.getWidth();
@@ -38,10 +38,14 @@ public class JPanelDibujo extends JPanel implements MouseMotionListener {
         Px[1] = .1 * w2;
         Px[2] = .9 * w2;
         Px[3] = .9 * w2;
+        Px[4] = .3 * w2;
+        Px[5] = .6 * w2;
         Py[0] = .1 * h1;
         Py[1] = .9 * h1;
         Py[2] = .9 * h1;
         Py[3] = .1 * h1;
+        Py[4] = .3 * w2;
+        Py[5] = .6 * w2;
 
         addMouseMotionListener(this);
         initiated = true;
